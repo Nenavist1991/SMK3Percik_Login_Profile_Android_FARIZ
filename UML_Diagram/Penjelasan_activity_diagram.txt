@@ -1,0 +1,21 @@
+Activity Diagram (diagram aktivitas) pada halaman login (masuk) aplikasi adalah bagian dari pemodelan UML (Unified Modeling Language) yang menggambarkan alur kerja, 
+urutan aktivitas,  dan keputusan (decision) secara berurutan mulai dari pengguna membuka halaman hingga berhasil atau gagal masuk ke dalam sistem.
+Komponennya berupa:
+1. Initial Node (Titik Awal) berupa awal mula proses dimulai
+2. Aktivity User
+    > Membuka halaman Login
+    > Mengisi form Username atau Email
+    > Mengisi password 
+    > Klik tombol Login
+3. Aktivisasi Sistem
+    > Menampilkan form Login
+    > Menerima data input dari USER
+    > Melakukan pemeriksaan data ke database
+4. Decision Node (Percabangan/Keputusan): Ditandai dengan simbol berlian (diamond) untuk mengecek validitas data 
+                                          (apakah username dan password benar?):
+                                          • Jika Salah (Invalid): 
+                                          Sistem menampilkan pesan error (peringatan seperti "username atau password salah"), 
+                                          lalu mengarahkan kembali user ke form login untuk mengisi ulang.
+                                          • Jika Benar (Valid): Sistem menampilkan notifikasi login sukses dan mengarahkan 
+                                          user menuju halaman utama (dashboard)
+5. Activity Final Node (Titik akhir) berupa akhir proses setelah dimulai
