@@ -1,0 +1,24 @@
+
+1. Aktor (Actors)
+
+Terdapat tiga aktor yang terlibat dalam sistem ini:
+• New User (Pengguna Baru): Pengguna yang belum memiliki akun dan ingin mendaftar ke dalam sistem.
+• User (Pengguna Terdaftar): Pengguna yang sudah memiliki akun dan ingin masuk ke dalam aplikasi.
+• System (Sistem): Aplikasi atau backend yang bertugas memproses, memvalidasi, menyimpan data, serta memberikan akses kepada pengguna.
+
+2. Alur Use Case: Registrasi (Register)
+
+Alur ini dilakukan oleh New User bersama dengan System untuk membuat akun baru:
+• Register: Aktor New User memulai proses pendaftaran akun.
+• Masukan Username, Email, dan Password: New User mengisi data kredensial yang dibutuhkan pada formulir pendaftaran.
+• Validasi: System (bersama input dari New User) melakukan pengecekan untuk memastikan format data sudah benar dan belum terdaftar sebelumnya.
+• Simpan Data Pengguna di Database: Jika validasi berhasil, data pengguna baru akan disimpan ke dalam basis data (database).
+• Konfirmasi Pembuatan Akun: System mengirimkan pemberitahuan atau konfirmasi bahwa akun berhasil dibuat.
+
+3. Alur Use Case: Login
+
+Alur ini dilakukan oleh User yang sudah terdaftar untuk masuk ke dalam sistem:
+• Login: Aktor User memulai proses masuk ke aplikasi.
+• Masukan Username & Password: User memasukkan nama pengguna dan kata sandi yang sesuai dengan akunnya.
+• Validasi: System mencocokkan username dan password yang dimasukkan dengan data yang ada di database.
+• Akses ke Halaman Utama: Jika data sesuai (valid), System memberikan hak akses sehingga User diarahkan masuk ke halaman utama (dashboard/home).
