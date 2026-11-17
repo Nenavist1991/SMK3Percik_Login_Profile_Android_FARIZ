@@ -1,0 +1,14 @@
+Penjelasan untuk flowchart buat Aplikasi Login Page:
+Mulai - Untuk eksekusi program
+Masuk halaman login yaitu men-trigger kode enter ke halaman koding
+Sudah punya Akun? - Pilihan bertanya untuk user agar keputusan kedepan dapat ditentukan
+YA - User akan masuk ke halaman LOGIN
+     Setelah itu akan dimintai email dan masukkan kata sandi
+     Klik 'Login' untuk menyuruh program mengeksekusi dan menginput data yang sudah kita masukkan, kemudian mencocokkannya
+
+TIDAK - User akan masuk ke halaman DAFTAR
+        Dimintai nama USER atau ID USER yang baru dan yang tersedia
+        Masukkan alamat email yang belum dipakai
+        Masukkan kata sandi unik yang aman
+        Konfirmasi kata sandi
+        Klik 'Daftar' untuk menyuruh sistem meregisterasi alamat email baru yang sudah kita input, kemudian jika sudah terdaftar, bisa kita loginkan
